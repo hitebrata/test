@@ -9,6 +9,13 @@ echo -e "Hello"'''
       }
     }
 
+    stage('run') {
+      steps {
+        sh '''#!/bin/bash
+echo -e "Run"'''
+      }
+    }
+
   }
   environment {
     Env = 'release'
